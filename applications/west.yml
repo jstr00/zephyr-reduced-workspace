@@ -1,0 +1,44 @@
+manifest:
+
+  self:
+    path: applications
+  defaults:
+    revision: main
+  projects:
+    - name: zephyr
+      path: zephyr
+      url: https://github.com/zephyrproject-rtos/zephyr.git
+      west-commands: scripts/west-commands.yml
+      revision: v4.3.0
+
+    - name: hal_nordic
+      path: modules/hal/nordic
+      url: https://github.com/zephyrproject-rtos/hal_nordic.git
+      revision: 7858281d843468fe53c829995fb63f45a227387a
+
+    - name: cmsis_6
+      url: https://github.com/zephyrproject-rtos/cmsis_6.git
+      path: modules/hal/cmsis_6
+      revision: 30a859f44ef8ab4dc8f84b03ed586fd16ccf9d74
+
+    - name: hal_espressif
+      path: modules/hal/espressif
+      url: https://github.com/zephyrproject-rtos/hal_espressif
+      west-commands: west/west-commands.yml
+      revision: af6cfa2e3e7098b596062ab516b80a48a7ba7332
+
+    - name: mcuboot
+      path: bootloader/mcuboot
+      url: https://github.com/mcu-tools/mcuboot.git
+      revision: 96576b341ee19f1c3af6622256b0d4f3d408e1e3
+
+    # - name: openthread
+    #   url: https://github.com/zephyrproject-rtos/openthread
+    #   path: modules/lib/openthread
+    #   revision: 2bc7712f57af22058770d1ef131ad3da79a0c764
+
+    - name: mbedtls
+      url: https://github.com/zephyrproject-rtos/mbedtls
+      path: modules/crypto/mbedtls
+      revision: c5b06d89c9c498d8fc8659ce31f7e53137b6270f
+
