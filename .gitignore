@@ -1,6 +1,5 @@
 /**/build/
 /zephyr/
 /venv/
-/.west/
 bootloader/
 modules/

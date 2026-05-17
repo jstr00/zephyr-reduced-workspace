@@ -139,7 +139,7 @@ west build --board=esp32c6_devkitc/esp32c6/hpcore .
 ```
 
 <p float="left">
-  <img src="/ressources/esp32_c6.jpg" width="280">
+  <img src="/resources/esp32_c6.jpg" width="280">
 </p>
 
 ### Espressif ESP32-H2
@@ -149,7 +149,7 @@ west build --board=esp32h2_devkitm .
 ```
 
 <p float="left">
-  <img src="/ressources/esp32_h2.jpg" width="280">
+  <img src="/resources/esp32_h2.jpg" width="280">
 </p>
 
 ---
